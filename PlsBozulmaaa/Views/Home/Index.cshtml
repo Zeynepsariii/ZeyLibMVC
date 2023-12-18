@@ -1,6 +1,6 @@
 ﻿@model BookDisplayModel
 @{
-    // ViewData["Title"] = "Home Page";
+    //ViewData["Title"] = "Home Page";
 }
 
 <div class="my-2">
@@ -54,7 +54,8 @@
                     </p>
                 </div>
                 <div style="margin-top: auto; margin-bottom: 5px; display: flex; justify-content: center;">
-                    <button type="button" onclick="add(@book.Id)" class="btn btn-primary">Add to cart</button>
+                   
+                     <button type="button" onclick="add(@book.Id)" class="btn btn-primary">Add to cart</button>
                 </div>
             </div>
         }
@@ -64,6 +65,76 @@
         <p>no books to display</p>
     }
 </div>
+<div id="successMessage" style="display: none; color: green;">Its added to your cart</div>
+
+
+@section Scripts {
+    <script>
+        async function add(bookId) {
+            var usernameEl = document.getElementById("username");
+            if (!usernameEl) {
+                window.location.href = "/Identity/Account/Login";
+                return; // Stop execution if user is not logged in
+            }
+
+        //async function add(bookId) {
+        //    var usernameEl = document.getElementById("username");
+        //    if (usernameEl && usernameEl.innerText.trim().length < 1) {
+        //        window.location.href = "/Identity/Account/Login";
+        //        return; // Stop execution if user is not logged in
+        //    }
+
+            try {
+                var response = await fetch(`/Cart/AddItem?bookId=${bookId}`);
+                if (response.status === 200) {
+                    var result = await response.json();
+                    console.log(result);
+                    var cartCountEl = document.getElementById("cartCount");
+                    if (cartCountEl) {
+                        cartCountEl.innerText = result;
+                    }
+                }
+            } catch (err) {
+                console.log(err);
+            }
+        }
+    </script>
+}
+
+@*
+@section Scripts {
+    <script>
+        async function add(bookId) {
+            var usernameEl = document.getElementById("username");
+            if (usernameEl && usernameEl.innerText.length < 1) {
+                // User is not logged in, redirect to login page
+                window.location.href = "/Identity/Account/Login";
+                return;
+            }
+
+            try {
+                var response = await fetch(`/Cart/AddItem?bookId=${bookId}`);
+                if (response.status === 200) {
+                    var result = await response.json();
+                    console.log(result);
+
+                    var cartCountEl = document.getElementById("cartCount");
+                    if (cartCountEl) {
+                        cartCountEl.innerText = result;
+
+                        
+                        }
+                    }
+                }
+            } catch (err) {
+                console.log(err);
+            }
+        }
+    </script>
+}
+
+
+
 
 
 @section Scripts{
@@ -94,7 +165,7 @@
     </script>
 }
 
-@*
+
 @section Scripts{
     <script>
 

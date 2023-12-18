@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ve1vIx0+wm9f31tfsxFSb7XM9yaGjhK/a3ff7Kk6Rcy5DX8N8RjRLv0Ky5ZzTEyZYWiqOjPI9gaU/BV4hERPqw==",
+  "dgSpecHash": "ghh+mNeqnsTTlY09+TuVQfKhqsUJgiOn4SaSiasarpjqysja1dKCxb6ZYnu3zMmHMN9FmZi4HjL8w3fNVClZHQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\PlsBozulmaaa\\PlsBozulmaaa.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\BenYoruldum\\ZeyLibMVC\\PlsBozulmaaa\\PlsBozulmaaa.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
