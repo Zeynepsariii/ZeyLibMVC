@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6SeK3GwKpVxqVv/YYElcxGYpi3ViOHx5l3BrEWT3clE=",
+  "Hash": "x+CdJzKe+QEeoz1ogbSDa1BE+F8w+sAYBEj9knB4hsM=",
   "Source": "PlsBozulmaaa",
   "BasePath": "_content/PlsBozulmaaa",
   "Mode": "Default",
@@ -1358,6 +1358,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\TepedekiEv.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\BenYoruldum\\ZeyLibMVC\\PlsBozulmaaa\\wwwroot\\images\\zeyLib.png",
+      "SourceId": "PlsBozulmaaa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\BenYoruldum\\ZeyLibMVC\\PlsBozulmaaa\\wwwroot\\",
+      "BasePath": "_content/PlsBozulmaaa",
+      "RelativePath": "images/zeyLib.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\zeyLib.png"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\BenYoruldum\\ZeyLibMVC\\PlsBozulmaaa\\wwwroot\\js\\site.js",

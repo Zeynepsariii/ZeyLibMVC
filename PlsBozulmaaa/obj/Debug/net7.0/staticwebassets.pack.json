@@ -73,6 +73,10 @@
       "PackagePath": "staticwebassets\\images\\TepedekiEv.jpg"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\BenYoruldum\\ZeyLibMVC\\PlsBozulmaaa\\wwwroot\\images\\zeyLib.png",
+      "PackagePath": "staticwebassets\\images\\zeyLib.png"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\BenYoruldum\\ZeyLibMVC\\PlsBozulmaaa\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -1,0 +1,31 @@
+﻿@model Book
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Create" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="bookName" class="form-label">Book Name</label>
+                    <input asp-for="BookName" class="form-control" id="bookName" />
+                </div>
+                <div class="mb-3">
+                    <label for="authorName" class="form-label">Author Name</label>
+                    <input asp-for="AuthorName" class="form-control" id="authorName" />
+                </div>
+                <div class="mb-3">
+                    <label for="image" class="form-label">Image</label>
+                    <input asp-for="Image" type="file" class="form-control" id="image" />
+                </div>
+                <div class="mb-3">
+                    <label class="visually-hidden" for="genreId">Genres</label>
+
+                    <select asp-for="GenreId" asp-items="@ViewBag.Genres" class="form-select" id="genreId">
+                        <option value="" selected disabled>Select Genre</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Add Book</button>
+            </form>
+        </div>
+    </div>
+</div>

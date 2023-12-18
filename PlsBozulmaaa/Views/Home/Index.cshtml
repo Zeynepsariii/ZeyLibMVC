@@ -66,7 +66,11 @@
     }
 </div>
 <div id="successMessage" style="display: none; color: green;">Its added to your cart</div>
-
+@*Admin butonu*@
+@if (User.IsInRole("Admin"))
+{
+    <a href="@Url.Action("Create", "Book")" class="btn btn-primary">Add Book</a>
+}
 
 @section Scripts {
     <script>
