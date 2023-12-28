@@ -7,7 +7,7 @@ namespace PlsBozulmaaa.Controllers
 {
     public class BookController : Controller
     {
-        private readonly ApplicationDbContext _db; // Replace with your actual DbContext
+        private readonly ApplicationDbContext _db; 
 
         public BookController(ApplicationDbContext context)
         {
@@ -35,14 +35,14 @@ namespace PlsBozulmaaa.Controllers
                         await _db.SaveChangesAsync();
                         return RedirectToAction(nameof(Index));
                     }
-                    // Handle validation errors
+                    
                     return View(book);
                 }
                 catch (Exception ex)
                 {
-                    // Log or print the exception details
+                    
                     Console.WriteLine(ex.Message);
-                    return View(book); // You may want to handle the exception differently
+                    return View(book); 
                 }
             }
             //if (ModelState.IsValid)
